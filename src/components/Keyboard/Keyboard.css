@@ -1,0 +1,115 @@
+@font-face {
+  font-family: math;
+  src: url(./assets/math.ttf);
+}
+
+.wrapper-keyboard {
+  position: relative;
+}
+
+.switch {
+  position: absolute;
+  top: 0px;
+  right: -50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-shadows {
+  box-shadow: inset 1.5px 1.5px 3px 0px #1d1d1d,
+    inset -1.5px -1.5px 3px 0px rgb(71, 71, 71);
+}
+.out-shadows {
+  box-shadow: -1.5px -1.5px 3px 0px rgb(71, 71, 71), 1.5px 1.5px 3px 0px #1d1d1d;
+}
+
+.color-white {
+  color: white;
+}
+.color-yellow {
+  color: #ffe452;
+}
+
+.select-functions,
+.select-numbers {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  border: none;
+
+  cursor: pointer;
+
+  background-color: #373737;
+
+  font-family: math;
+
+  font-size: 20px;
+
+  position: relative;
+
+  transition-duration: 0.3s;
+}
+.select-functions::before,
+.select-numbers::before {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+.select-functions::before {
+  content: "F";
+}
+.select-numbers {
+  margin-bottom: 10px;
+}
+.select-numbers::before {
+  content: "R";
+}
+.select-numbers:hover,
+.select-functions:hover {
+  color: #ffe452;
+}
+
+.keyboard {
+  width: 275px;
+  height: auto;
+
+  overflow: hidden;
+
+  padding: 15px;
+
+  box-shadow: inset 2px 2px 6px 2px #1d1d1d;
+
+  background-color: #373737;
+
+  margin-left: 8px;
+
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 85px);
+  grid-template-rows: repeat(4, 85px);
+
+  column-gap: 10px;
+  row-gap: 10px;
+
+  margin-right: 15px;
+}
+
+.functions {
+  display: grid;
+  grid-template-columns: repeat(3, 85px);
+  grid-template-rows: repeat(4, 85px);
+
+  column-gap: 10px;
+  row-gap: 10px;
+}

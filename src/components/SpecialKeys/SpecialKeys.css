@@ -1,0 +1,21 @@
+.SpecialKeys {
+    width: auto;
+    height: auto;
+
+    border-radius: 10px;
+
+    background-color: #373737;
+
+    box-shadow: inset 2px 2px 6px 2px #1D1D1D;
+
+    padding: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 85px);
+    grid-template-rows: repeat(4, 85px);
+    column-gap: 10px;
+    row-gap: 10px;
+
+    align-content: center;
+    justify-content: center;
+}
